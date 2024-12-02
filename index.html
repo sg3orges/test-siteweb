@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Le titre de ma page</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,500;8..144,700;8..144,900&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html" class="nav-icon"
+           aria-label="Home page"
+           aria-current="page">
+            <img src="image/HarmonyCorpLogo.svg"
+                 alt="logo">
+            <span>Harmony Corporation</span>
+        </a>
+        <div class="main-navlinks">
+            <button class="hamburger" type="button" aria-label="nav" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="navlinks-container">
+
+                <a href="pages/Projet.html">Notre projet</a>
+                <a href="pages/equipe.html">Notre equipe</a>
+                <a href="pages/documentations.html">Documentations</a>
+
+                <!--<a href="pages/telechargement.html">Telechargement</a>-->
+            </div>
+        </div>
+        <div class="nav-authentification">
+            <a href="#" class="sign-user"
+               aria-label="">
+                <img src="image/user.svg"
+                     alt="user-icon">
+            </a>
+            <!--<div class="sign-button">
+                <button type="button">Sign In</button>
+                <button type="button">Sign Up</button>
+
+            </div>-->
+        </div>
+
+    </nav>
+
+    <script src = "js/script.js"></script>
+</header>
+
+<main style="background-color: #414141">
+     <div class="home" >
+       <h1 class="h1-home"></h1>
+    </div>
+    <br>
+    <h1 style="text-align: center; color: #f4f4f4">Nos differents jeux</h1>
+    <br>
+    <br>
+    <div class="alternance">
+        <img src="image/coeur.png" alt="Description de votre image" class="logoG">
+        <p class="descriptions">Le projet a été pensé par Grégoire Siraudin, un passionné de musique. C'est un jeu de plates-formes en 2D alternées avec des combats de boss en 3D isométrique. Son objectif est de faire découvrir de nouveaux instruments de musique tout en imposant un défi de difficulté au joueur lors d'un jeu de plateforme où il devra vaincre des ennemis grâce à la musique des instruments qu'il trouvera tout au long de son aventure. Il pourra être accompagné d'un second joueur pour coopérer dans sa partie.</p>
+    </div>
+    <br>
+    <br>
+    <div class="alternance">
+        <img src="image/coeur.png" alt="Description de votre image" class="logoG">
+        <p class="descriptions">Lost Beat. Ce premier projet de jeu très ambitieux visait à donner vie à un RPG avec pour but final plusieurs dizaines d’heures de temps de jeu. Il n’a cependant pas bien débuté à cause d’un budget dérisoire et du manque de communication dans l’équipe de création, mais il finit tout de même par voir le jour en décembre 2021, sans faire pour autant l'unanimité auprès du public. En effet, à sa sortie, le jeu comportait trop peu de contenu et beaucoup de bugs. Les ventes en ont été fortement impactées puisque le jeu n’a pas dépassé les mille téléchargements trois mois après sa sortie.
+
+            Ce qui aurait pu être perçu comme un échec a servi de source d’amélioration pour l’équipe de développement ainsi que ses cofondateurs. Effectivement, ces derniers changent en ce début difficile, les différents problèmes palpables au sein de l’entreprise. Ainsi, pendant plus de deux ans, les différents membres de l’équipe d’Harmony Corporation vont travailler en étroite collaboration pour corriger et améliorer Lost Beat afin qu’il atteigne aujourd’hui une certaine renommée dans le monde du jeu vidéo indépendant avec plus de dix mille ventes sur Steam.</p>
+    </div>
+    <br>
+    <br>
+
+</main>
+
+<footer>
+    <div class="footer-content">
+        <h3>Harmony Corporation</h3>
+        <p> Notre projet vous faire découvrir la musique et ses mystères. </p>
+        <ul class="social">
+            <li><a href="#"><i class="fa fa-facebook"></i></a> </li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a> </li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a> </li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a> </li>
+        </ul>
+    </div>
+</footer>
+
+
+</body>
+
+<script>
+    if('serviceWorker'in navigator){
+        window.addEventListener('load',function(){
+            navigator.serviceWorker.register('/service-worker.js').then(function(){
+                console.log('ServiceWorker is load');
+            })
+        })
+    }
+</script>
+
+</html>
